@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   get '/new' do
 
-    @puppy = Puppy.new(params)
+    @puppy = Puppy.new
      binding.pry
     @name = params[:name]
     @breed = params[:breed]
