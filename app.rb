@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/puppy/new' do
+  get '/new' do
        binding.pry
     @puppy = Puppy.new(params)
 
