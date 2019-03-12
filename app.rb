@@ -7,10 +7,11 @@ class App < Sinatra::Base
   end
 
   get '/puppy/new' do
+       binding.pry
     @puppy = Puppy.new(params)
 
    erb :create_puppy
-   binding.pry
+
   end
 
   post '/puppy' do
